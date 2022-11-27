@@ -17,24 +17,16 @@ if (navigator.serviceWorker) {
 
 /**
  * This function displays an alert.
- * Math
- */
-function calculate() {
-  // input
-  const a = parseInt(document.getElementById("textbox-a").value)
-  const b = parseInt(document.getElementById("textbox-b").value)
-  const c = parseInt(document.getElementById("textbox-c").value)
-
-  // process
-  const math = a + b + c
-  // output
-  document.getElementById("math").innerHTML = "Numbers: " + math + " units"
-}
-
-/**
- * This function displays an alert.
  * Words
  */
-function button() {
-  document.getElementById("words").innerHTML = "<p>Hello, World!</p>"
+function calculate() {
+  let inputedAge = document.getElementById("age").value
+  let inputedDay = document.getElementById("day").value
+
+
+  if ((day == Tuesday || day == Thursday) || (age > 12 && age < 21)) {
+    document.getElementById("answer").innerHTML = "You're able to get the discount! :)"
+  } else {
+    document.getElementById("answer").innerHTML = "Sorry, you must pay for regular pricing. :("
+  }
 }
