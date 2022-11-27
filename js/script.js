@@ -23,7 +23,7 @@ function calculate() {
   let inputedAge = document.getElementById("age").value
   let inputedDay = document.getElementById("day").value
 
-  if ((day == "Tuesday") || (day == "Wednesday") || (age > 12 && age < 21)) {
+  if (day == "Tuesday" || day == "Wednesday" || (age > 12 && age < 21)) {
     document.getElementById("answer").innerHTML =
       "You're able to get the discount! :)"
   } else {
